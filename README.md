@@ -1,13 +1,13 @@
-# Local AI with Vulkan support Community Container for Nextcloud All-In-One
+# Updated Container for Local AI, CUDA13 Edition for Nextcloud All-In-One
 
-This container is used in the [Nextcloud All-In-One](https://github.com/nextcloud/all-in-one/tree/main/community-containers/local-ai) AI backend for Nextcloud Assistant. It works with the [Caddy community container](https://github.com/nextcloud/all-in-one/tree/main/community-containers/caddy) as a reverse proxy.
+This container forked from the one used in the [Nextcloud All-In-One](https://github.com/nextcloud/all-in-one/tree/main/community-containers/local-ai) AI backend for Nextcloud Assistant. It works with the [Caddy community container](https://github.com/nextcloud/all-in-one/tree/main/community-containers/caddy) as a reverse proxy.
 
 ## Features
 
 Compared to the default LocalAI container, this container provides:
 
 - Automatic configuration of Nextcloud Assistant.
-- Hardware acceleration support with Vulkan.
+- Hardware acceleration support with CUDA 13.
 - Easy access to the local AI web interface.
 
 ## Getting Started
@@ -23,7 +23,7 @@ You need:
 
 For hardware acceleration (optional but recommended), you need:
 
-- A GPU compatible with Vulkan. Run `vulkaninfo` in the terminal to check if it is enabled.
+- A modern NVIDIA GPU.
 - Enable [DRI device](https://github.com/nextcloud/all-in-one/tree/main#with-open-source-drivers-mesa-for-amd-intel-and-new-drivers-nouveau-for-nvidia) in AIO. Add `--env NEXTCLOUD_ENABLE_DRI_DEVICE=true` to the container.
 
 ### Installation
