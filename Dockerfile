@@ -1,4 +1,4 @@
-FROM localai/localai:latest-gpu-nvidia-cuda-13
+FROM localai/localai:master-gpu-nvidia-cuda-13
 
 # Needed for Nextcloud AIO so that image cleanup can work.
 # Unfortunately, this needs to be set in the Dockerfile in order to work.
